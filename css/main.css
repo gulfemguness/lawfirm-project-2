@@ -1,0 +1,60 @@
+body{ background: url(images/nza_background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;} 
+
+    .container { 
+        height:100vh;
+        
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.4fr 0.3fr 3.6fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "login-nav"
+          "logo-area"
+          "true-nav"
+          "content"
+          "footer";
+      }
+      
+      .logo-area { grid-area: logo-area;
+        background-color: white }
+      
+      .true-nav { grid-area: true-nav;
+        background-color: white }
+      
+      .content { grid-area: content;
+        background-color: white}
+      
+      .footer { grid-area: footer;
+    background-color: white }
+      
+    
+
+
+
+
+#nav{
+    border: 1px solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+    border-top:1px
+}
+
+#footer{
+    border: 1px solid;
+    margin-bottom: 75px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+
+}
+
+
+
+
